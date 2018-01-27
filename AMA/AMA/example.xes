@@ -1,0 +1,80 @@
+<log>
+    <trace>
+        <event>
+            <string key="a_id" value="a" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="b" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="d" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="f" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+    </trace>
+    <trace>
+        <event>
+            <string key="a_id" value="a" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="c" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="e" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="f" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+    </trace>
+    <trace>
+        <event>
+            <string key="a_id" value="a" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="x" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="f" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+    </trace>
+    <trace>
+        <event>
+            <string key="a_id" value="a" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="x" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+        <event>
+            <string key="a_id" value="f" />
+            <string key="r_id" value="A" />
+            <string key="e_type" value="local" />
+        </event>
+    </trace>
+</log>
