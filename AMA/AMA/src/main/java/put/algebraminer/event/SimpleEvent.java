@@ -70,6 +70,16 @@ public class SimpleEvent {
 	}
 
 
+	public String getActivity() {
+		return activity;
+	}
+
+
+	public String getResource() {
+		return resource;
+	}
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
