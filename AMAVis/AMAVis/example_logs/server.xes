@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<log>
+    <trace>
+        <event>
+			<string key="a_id" value="recv_start"/>
+			<string key="r_p_id" value="1171505614"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="serviceReturn"/>
+            <string key="source" value="http://localhost:8080/client"/>
+			<string key="destination" value="http://localhost:8081/server"/>
+            <string key="l_p_id" value="2137" />
+            <string key="c_id" value="2" />
+        </event>
+        <event>
+			<string key="a_id" value="a"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="local"/>
+            <string key="l_p_id" value="2137" />
+        </event>
+        <event>
+			<string key="a_id" value="b"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="local"/>
+            <string key="l_p_id" value="2137" />
+        </event>
+        <event>
+			<string key="a_id" value="send_start"/>
+			<string key="r_p_id" value="1171505614"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="serviceCall"/>
+            <string key="destination" value="http://localhost:8080/client"/>
+			<string key="source" value="http://localhost:8081/server"/>
+            <string key="l_p_id" value="2137" />
+            <string key="c_id" value="2" />
+        </event>
+    </trace>
+    <trace>
+        <event>
+			<string key="a_id" value="recv_start"/>
+			<string key="r_p_id" value="1171505614"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="serviceReturn"/>
+            <string key="source" value="http://localhost:8080/client"/>
+			<string key="destination" value="http://localhost:8081/server"/>
+            <string key="l_p_id" value="1337" />
+            <string key="c_id" value="1" />
+        </event>
+        <event>
+			<string key="a_id" value="b"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="local"/>
+            <string key="l_p_id" value="1337" />
+        </event>
+        <event>
+			<string key="a_id" value="a"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="local"/>
+            <string key="l_p_id" value="1337" />
+        </event>
+        <event>
+			<string key="a_id" value="send_start"/>
+			<string key="r_p_id" value="1171505614"/>
+			<string key="time" value="2018-01-24;20:19:12:222"/>
+			<string key="r_id" value="put.logs.B"/>
+			<string key="e_type" value="serviceCall"/>
+            <string key="destination" value="http://localhost:8080/client"/>
+			<string key="source" value="http://localhost:8081/server"/>
+            <string key="l_p_id" value="1337" />
+            <string key="c_id" value="1" />
+        </event>
+    </trace>
+</log>

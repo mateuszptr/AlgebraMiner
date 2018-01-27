@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="execution(Response com.restfully.shop.services.CustomerResource.createCustomer(HttpHeaders, HttpServletRequest, InputStream))"/>
+			<string key="l_p_id" value="724612648"/>
+			<string key="destination" value="http://localhost:8080/services/customers"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="/client/"/>
+			<string key="time" value="2018-01-26;15:40:26:892"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="time" value="2018-01-26;15:40:26:967"/>
+			<string key="a_id" value="execution(Customer com.restfully.shop.services.CustomerResource.readCustomer(InputStream))"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="local"/>
+			<string key="l_p_id" value="724612648"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="return from execution(Response com.restfully.shop.services.CustomerResource.createCustomer(HttpHeaders, HttpServletRequest, InputStream))"/>
+			<string key="l_p_id" value="724612648"/>
+			<string key="destination" value="/client/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/services/customers"/>
+			<string key="time" value="2018-01-26;15:40:26:986"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="execution(Response com.restfully.shop.services.CustomerResource.getCustomer(HttpHeaders, HttpServletRequest, int))"/>
+			<string key="l_p_id" value="724612649"/>
+			<string key="destination" value="http://localhost:8080/services/customers/1"/>
+			<string key="c_id" value="2"/>
+			<string key="source" value="/client/"/>
+			<string key="time" value="2018-01-26;15:40:27:115"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="return from execution(Response com.restfully.shop.services.CustomerResource.getCustomer(HttpHeaders, HttpServletRequest, int))"/>
+			<string key="l_p_id" value="724612649"/>
+			<string key="destination" value="/client/"/>
+			<string key="c_id" value="2"/>
+			<string key="source" value="http://localhost:8080/services/customers/1"/>
+			<string key="time" value="2018-01-26;15:40:27:128"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="execution(void com.restfully.shop.services.CustomerResource.updateCustomer(HttpHeaders, HttpServletRequest, int, InputStream))"/>
+			<string key="l_p_id" value="724612650"/>
+			<string key="destination" value="http://localhost:8080/services/customers/1"/>
+			<string key="c_id" value="3"/>
+			<string key="source" value="/client/"/>
+			<string key="time" value="2018-01-26;15:40:27:205"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="executionNotResponse"/>
+		</event>
+		<event>
+			<string key="time" value="2018-01-26;15:40:27:266"/>
+			<string key="a_id" value="execution(Customer com.restfully.shop.services.CustomerResource.readCustomer(InputStream))"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="local"/>
+			<string key="l_p_id" value="724612650"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="return from execution(void com.restfully.shop.services.CustomerResource.updateCustomer(HttpHeaders, HttpServletRequest, int, InputStream))"/>
+			<string key="l_p_id" value="724612650"/>
+			<string key="destination" value="/client/"/>
+			<string key="c_id" value="3"/>
+			<string key="source" value="http://localhost:8080/services/customers/1"/>
+			<string key="time" value="2018-01-26;15:40:27:269"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="returningNotResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="execution(Response com.restfully.shop.services.CustomerResource.getCustomer(HttpHeaders, HttpServletRequest, int))"/>
+			<string key="l_p_id" value="724612651"/>
+			<string key="destination" value="http://localhost:8080/services/customers/1"/>
+			<string key="c_id" value="5"/>
+			<string key="source" value="/client/"/>
+			<string key="time" value="2018-01-26;15:40:27:322"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="10334909900"/>
+			<string key="a_id" value="return from execution(Response com.restfully.shop.services.CustomerResource.getCustomer(HttpHeaders, HttpServletRequest, int))"/>
+			<string key="l_p_id" value="724612651"/>
+			<string key="destination" value="/client/"/>
+			<string key="c_id" value="5"/>
+			<string key="source" value="http://localhost:8080/services/customers/1"/>
+			<string key="time" value="2018-01-26;15:40:27:336"/>
+			<string key="r_id" value="com.restfully.shop.services.CustomerResource"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+</log>

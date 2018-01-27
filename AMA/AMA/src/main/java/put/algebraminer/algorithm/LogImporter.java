@@ -20,12 +20,15 @@ import org.deckfour.xes.in.XesXmlParser;
 import org.deckfour.xes.model.XEvent;
 import org.deckfour.xes.model.XLog;
 import org.deckfour.xes.model.XTrace;
+import org.deckfour.xes.model.impl.XAttributeDiscreteImpl;
 import org.deckfour.xes.model.impl.XAttributeMapImpl;
 import org.deckfour.xes.model.impl.XLogImpl;
 
+import com.google.common.collect.HashMultiset;
 import com.google.common.collect.ListMultimap;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
+import com.google.common.collect.Multiset;
 
 import put.algebraminer.event.AlgebraGraph;
 import put.algebraminer.event.EventType;
@@ -50,6 +53,22 @@ public class LogImporter {
 //	}
 	
 	
+	public static void uniqueXEvents(XTrace trace) {
+		Multiset<SimpleEvent> mset = HashMultiset.create();
+		for(XEvent event : trace) {
+			SimpleEvent se = new SimpleEvent(event);
+			mset.add(se);
+			int counter = mset.count(se);
+			event.getAttributes().put("counter", new XAttributeDiscreteImpl("counter", counter));
+		}
+	}
+	
+	public static void uniqueAll(XLog log) {
+		for(XTrace trace : log) {
+			uniqueXEvents(trace);
+		}
+	}
+	
 	public static Map<String, XLog> importLogsFromDir(String directory) throws IOException {
 		Map<String, XLog> xlogMap = new HashMap<>();
 		
@@ -58,6 +77,7 @@ public class LogImporter {
 			XLog log = null;
 			try {
 				log = parser.parse(file.toFile()).get(0);
+				uniqueAll(log);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

@@ -1,6 +1,7 @@
 package put.algebraminer.event;
 
 import org.deckfour.xes.model.XEvent;
+import org.deckfour.xes.model.impl.XAttributeDiscreteImpl;
 
 public class SimpleEvent {
 
@@ -12,6 +13,7 @@ public class SimpleEvent {
 	private static final String LPID_NAME = "l_p_id";
 	private static final String RPID_NAME = "r_p_id";
 	private static final String CID_NAME = "c_id";
+	private static final String COUNT_NAME = "counter";
 	
 	private String activity;
 	private String resource;
@@ -21,6 +23,12 @@ public class SimpleEvent {
 	private String lpid=null;
 	private String rpid=null;
 	private String cid=null;
+	private int counter=0;
+
+	public int getCounter() {
+		return counter;
+	}
+
 
 	private XEvent xevent;
 
@@ -38,9 +46,12 @@ public class SimpleEvent {
 			this.rpid = xevent.getAttributes().get(RPID_NAME).toString();
 		if(xevent.getAttributes().get(CID_NAME) != null)
 			this.cid = xevent.getAttributes().get(CID_NAME).toString();
+		if(xevent.getAttributes().get(COUNT_NAME) != null) 
+			this.counter = (int) ((XAttributeDiscreteImpl)xevent.getAttributes().get(COUNT_NAME)).getValue();
 		
 		this.xevent = xevent;
 	}
+	
 
 	
 	public String getDestination() {
@@ -80,18 +91,21 @@ public class SimpleEvent {
 	}
 
 
+	
+
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((activity == null) ? 0 : activity.hashCode());
+		result = prime * result + counter;
 		result = prime * result + ((destination == null) ? 0 : destination.hashCode());
 		result = prime * result + ((resource == null) ? 0 : resource.hashCode());
 		result = prime * result + ((source == null) ? 0 : source.hashCode());
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -106,6 +120,8 @@ public class SimpleEvent {
 			if (other.activity != null)
 				return false;
 		} else if (!activity.equals(other.activity))
+			return false;
+		if (counter != other.counter)
 			return false;
 		if (destination == null) {
 			if (other.destination != null)
@@ -129,7 +145,6 @@ public class SimpleEvent {
 			return false;
 		return true;
 	}
-
 
 	@Override
 	public String toString() {
