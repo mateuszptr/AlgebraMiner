@@ -142,4 +142,25 @@ public class LogImporter {
 			System.out.println(model.getUris());
 		}
 	}
+	
+	public static List<LogModel> processLogsFromDir(String directory) {
+		Map<String, XLog> xlogMap = null;
+		try {
+			xlogMap = importLogsFromDir(directory);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		List<LogModel> models = generateLogModels(xlogMap);
+//		for(LogModel model : models) {
+//			System.out.println(model.getAg().getGraph());
+//			System.out.println(model.getUris());
+//		}
+		GlobalAlgebraMiner.findConnections(models);
+//		for(LogModel model : models) {
+//			System.out.println(model.getAg().getGraph());
+//			System.out.println(model.getUris());
+//		}
+		return models;
+	}
 }

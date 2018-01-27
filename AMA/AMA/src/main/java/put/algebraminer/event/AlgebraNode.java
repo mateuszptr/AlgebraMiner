@@ -58,13 +58,13 @@ public class AlgebraNode {
 	@Override
 	public String toString() {
 		if(!sendingTo.isEmpty()) {
-			return "(" + event + "$" + sendingTo + ")";
+			return "(" + event + "$" + sendingTo + ")@" + hashCode();
 		}
 		
 		if(type == Type.SIMPLE)
-			return "(" + event + ")";
+			return "(" + event + ")@" + hashCode() ;
 		else
-			return "[" + type + "]";
+			return "[" + type + "]@" + hashCode();
 	}
 
 	
