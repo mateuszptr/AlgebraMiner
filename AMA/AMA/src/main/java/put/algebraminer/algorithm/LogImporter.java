@@ -98,6 +98,25 @@ public class LogImporter {
 		return xlogMap;
 	}
 	
+	public static Map<String, XLog> importLogsFromBigLog(XLog bigLog) {
+		Map<String, XLog> xlogMap = new HashMap<>();
+		
+		uniqueAll(bigLog);
+		for(XTrace trace : bigLog) {
+			String resource = trace.get(0).getAttributes().get("r_id").toString();
+			XLog xlog;
+			if(xlogMap.containsKey(resource)) {
+				xlog = xlogMap.get(resource);
+			} else {
+				xlog = new XLogImpl(new XAttributeMapImpl());
+				xlogMap.put(resource, xlog);
+			}
+			xlog.add(trace);
+		}
+		
+		return xlogMap;
+	}
+	
 	private static LogModel populateURIs(LogModel model) {
 		XLog xlog = model.getXlog();
 		Set<String> uris = new HashSet<>();
