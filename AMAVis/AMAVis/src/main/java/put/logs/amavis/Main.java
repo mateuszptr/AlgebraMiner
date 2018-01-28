@@ -17,13 +17,13 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String dir = "examples3";
+		String dir = "example_logs";
 
 		List<LogModel> models = LogImporter.processLogsFromDir(dir);
 		MutableGraph g = AMAVis.generateVisGraph(models);
 
 		try {
-			Graphviz.fromGraph(g).width(2000).render(Format.PNG).toFile(new File("example/e2.png"));
+			Graphviz.fromGraph(g).width(1000).render(Format.PNG).toFile(new File("example/example2.png"));
 			System.out.println(g);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
