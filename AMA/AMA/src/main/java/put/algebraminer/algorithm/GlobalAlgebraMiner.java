@@ -54,8 +54,8 @@ public class GlobalAlgebraMiner {
 		if(EventType.fromString(send.getType()) != EventType.SEND || EventType.fromString(recv.getType()) != EventType.RECV) return false;
 		if(send.getCid() == null || !send.getCid().equals(recv.getCid())) return false;
 		
-		if(send.getLpid().equals(recv.getRpid())) return true;
-		if(recv.getLpid().equals(send.getRpid())) return true;
+		if(send.getLpid().equals(recv.getRpid()) && recv.getLpid().equals(send.getRpid())) return true;
+		//if(recv.getLpid().equals(send.getRpid())) return true;
 		
 		return false;
 	}

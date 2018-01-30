@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- This file has been generated with the OpenXES library. It conforms -->
+<!-- to the XML serialization of the XES standard for log storage and -->
+<!-- management. -->
+<!-- XES standard version: 1.0 -->
+<!-- OpenXES library version: 1.0RC7 -->
+<!-- OpenXES is available from http://www.openxes.org/ -->
+<log xes.version="1.0" xes.features="nested-attributes" openxes.version="1.0RC7">
+	<trace>
+		<event>
+			<string key="r_p_id"/>
+			<string key="a_id" value="execution(Response pl.poznan.put.cs.testservices.services.ResourceOne.processResourceOne(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1635814658"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="c_id"/>
+			<string key="source" value="127.0.0.1"/>
+			<string key="time" value="2018-01-30;19:46:48:038"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceOne"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="a_id" value="call(Invocation.Builder javax.ws.rs.client.WebTarget.request())"/>
+			<string key="l_p_id" value="1635814658"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="time" value="2018-01-30;19:46:48:251"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceOne"/>
+			<string key="e_type" value="requestCreation"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="2035958361"/>
+			<string key="a_id" value="call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="1635814658"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="time" value="2018-01-30;19:46:48:256"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceOne"/>
+			<string key="e_type" value="serviceCall"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="2035958361"/>
+			<string key="a_id" value="return from call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="1635814658"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="time" value="2018-01-30;19:46:48:631"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceOne"/>
+			<string key="e_type" value="serviceReturn"/>
+		</event>
+		<event>
+			<string key="r_p_id"/>
+			<string key="a_id" value="return from execution(Response pl.poznan.put.cs.testservices.services.ResourceOne.processResourceOne(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1635814658"/>
+			<string key="destination" value="127.0.0.1"/>
+			<string key="c_id"/>
+			<string key="source" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="time" value="2018-01-30;19:46:48:633"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceOne"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="1635814658"/>
+			<string key="a_id" value="execution(Response pl.poznan.put.cs.testservices.services.ResourceTwo.processResourceTwo(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="2035958361"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="time" value="2018-01-30;19:46:48:458"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceTwo"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="a_id" value="call(Invocation.Builder javax.ws.rs.client.WebTarget.request())"/>
+			<string key="l_p_id" value="2035958361"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="time" value="2018-01-30;19:46:48:494"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceTwo"/>
+			<string key="e_type" value="requestCreation"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1067098633"/>
+			<string key="a_id" value="call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="2035958361"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="time" value="2018-01-30;19:46:48:494"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceTwo"/>
+			<string key="e_type" value="serviceCall"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1067098633"/>
+			<string key="a_id" value="return from call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="2035958361"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="time" value="2018-01-30;19:46:48:615"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceTwo"/>
+			<string key="e_type" value="serviceReturn"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1635814658"/>
+			<string key="a_id" value="return from execution(Response pl.poznan.put.cs.testservices.services.ResourceTwo.processResourceTwo(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="2035958361"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource1/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="time" value="2018-01-30;19:46:48:618"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceTwo"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="2035958361"/>
+			<string key="a_id" value="execution(Response pl.poznan.put.cs.testservices.services.ResourceThree.processResourceThree(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1067098633"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="time" value="2018-01-30;19:46:48:509"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceThree"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="a_id" value="call(Invocation.Builder javax.ws.rs.client.WebTarget.request())"/>
+			<string key="l_p_id" value="1067098633"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource4/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="time" value="2018-01-30;19:46:48:536"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceThree"/>
+			<string key="e_type" value="requestCreation"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1881481677"/>
+			<string key="a_id" value="call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="1067098633"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource4/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="time" value="2018-01-30;19:46:48:536"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceThree"/>
+			<string key="e_type" value="serviceCall"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1881481677"/>
+			<string key="a_id" value="return from call(Response javax.ws.rs.client.Invocation.Builder.post(Entity))"/>
+			<string key="l_p_id" value="1067098633"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource4/"/>
+			<string key="time" value="2018-01-30;19:46:48:594"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceThree"/>
+			<string key="e_type" value="serviceReturn"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="2035958361"/>
+			<string key="a_id" value="return from execution(Response pl.poznan.put.cs.testservices.services.ResourceThree.processResourceThree(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1067098633"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource2/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="time" value="2018-01-30;19:46:48:607"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceThree"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+	<trace>
+		<event>
+			<string key="r_p_id" value="1067098633"/>
+			<string key="a_id" value="execution(Response pl.poznan.put.cs.testservices.services.ResourceFour.processResourceFour(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1881481677"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource4/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="time" value="2018-01-30;19:46:48:547"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceFour"/>
+			<string key="e_type" value="executionResponse"/>
+		</event>
+		<event>
+			<string key="r_p_id" value="1067098633"/>
+			<string key="a_id" value="return from execution(Response pl.poznan.put.cs.testservices.services.ResourceFour.processResourceFour(HttpHeaders, HttpServletRequest, TestResource))"/>
+			<string key="l_p_id" value="1881481677"/>
+			<string key="destination" value="http://localhost:8080/testservices/resource3/"/>
+			<string key="c_id" value="1"/>
+			<string key="source" value="http://localhost:8080/testservices/resource4/"/>
+			<string key="time" value="2018-01-30;19:46:48:552"/>
+			<string key="r_id" value="pl.poznan.put.cs.testservices.services.ResourceFour"/>
+			<string key="e_type" value="returningResponse"/>
+		</event>
+	</trace>
+</log>

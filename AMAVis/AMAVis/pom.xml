@@ -22,7 +22,7 @@
 		<dependency>
 			<groupId>AMA</groupId>
 			<artifactId>AMA</artifactId>
-			<version>0.0.6-SNAPSHOT</version>
+			<version>0.0.8-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 </project>
